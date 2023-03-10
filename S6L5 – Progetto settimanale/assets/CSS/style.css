@@ -1,0 +1,55 @@
+header{
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.featured {
+  height: 450px;
+  position: relative;
+  background-image: url("../media/stranger-things.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 230px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#icon{
+  margin-top: 20px;
+}
+
+#social{
+ cursor: pointer;
+margin-left: 3em;
+color: grey;
+}
+
+ul li{
+  cursor: pointer;
+}
+ 
+img{
+  cursor: pointer;
+}
+
+i{
+  cursor: pointer;
+}
+
+#code{
+margin-left: 6em;
+}
+
+image {
+  transition: transform 0.3s;
+  transition-timing-function: linear;
+  z-index: 0;
+}
+
+img:hover {
+  transform: rotate(0deg) scale(1.1);
+  z-index: 1;
+}

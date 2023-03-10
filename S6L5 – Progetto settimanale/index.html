@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+  <header class="position-sticky">
+    <nav class="navbar navbar-expand-lg bg-dark ">
+
+      <!--NavLeft-->
+      <div class="container-fluid">
+        <img src="./assets/netflix_logo.png" alt="Logo" width="120rem">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">My List</a>
+            </li>
+          </ul>
+
+          <!--NavRight-->
+          <div class="d-flex me-3" role="search">
+            <i id="icon" class="fa-solid fa-magnifying-glass text-light me-4 "></i>
+            <p class="text-light mt-3 me-3">KIDS</p>
+            <i id="icon" class="fa-regular fa-bell text-light  me-4"></i>
+            <div class="dropdown open">
+              <a class=" bg-transparent border border-0 b btn btn-secondary dropdown-toggle" type="button"
+                id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./assets/avatar.png" alt="Avatar" width="40rem">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a><img src="./assets/avatar.png" alt="" width="30rem">Luca</a>
+                </li>
+                <li><a class="dropdown-item" href="#"></a><img src="./assets/kids_icon.png" alt=""
+                    width="30rem">Kids</a></li>
+
+                <li>
+                  <hr>
+                </li>
+                <li><a class="dropdown-item" href="./settingsPage.html">Setting</a></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!--Carosello Film-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="featured">
+
+            <h2 class="text-light">STRANGER THINGS</h2>
+            <div class="featured__buttons">
+
+            </div>
+            <div class="text-light">
+              Strange sightings. Government secrets. Fearless kids. And a dark
+              force that turns a small town upside down......
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="featured" style="background-image: url('./assets/media/money-heist-cover-img.jpg')">
+            <h2 class="text-light">MONEY HEIST</h2>
+            <div class="text-light">
+              Eight thieves take hostages and lock themselves in the Royal
+              Mint of Spain as a criminal mastermind manipu....
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="featured" style="background-image: url('./assets/media/sacred-games.jpg')">
+            <h2 class="text-light" style="font-size: 35px">SACRED GAMES</h2>
+            <div class="featured__buttons">
+            </div>
+            <div class="text-light">
+              THE RIGHTEOUS. THE RUTHLESS. EVERYONE WANTS TO PLAY.
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--Film-->
+    <main>
+      <div class="tvShow ms-5 mt-3 text-light d-flex ">
+        <h1>Tv Shows</h1>
+        <div class="dropdown open ms-3 mt-2">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+                Geners
+              </button>
+          <div class="dropdown-menu" aria-labelledby="triggerId">
+            <button class="dropdown-item" href="#">Action</button>
+            <button class="dropdown-item" href="#">Classic</button>
+            <button class="dropdown-item" href="#">Animation</button>
+            <button class="dropdown-item" href="#">Biografy</button>
+            <button class="dropdown-item" href="#">Commedian</button>
+          </div>
+        </div>
+      </div>
+      <section class="mt-4"> <!--Trending Now-->
+        <p class="text-light fs-4 ms-5">Trending Now</p>
+        <div class="container-fluid ">
+          <div class="row gx- justify-content-center ">
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media1.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media2.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media3.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media4.jpg" alt="" width="210rem">
+            </div>
+            <div class="col col-2 ">
+              <img src="./assets/media/media5.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media6.jpg" alt="" width="210rem">
+            </div>
+      </section>
+      <section class="mt-5"><!--Watch It Again-->
+        <div class="container-fluid ">
+          <p class="text-light fs-4 ms-5">Watch It Again</p>
+          <div class="row gx- justify-content-center ">
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media7.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media8.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media9.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media10.jpg" alt="" width="210rem">
+            </div>
+            <div class="col col-2 ">
+              <img src="./assets/media/media11.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media12.jpg" alt="" width="210rem">
+            </div>
+      </section>
+      <section class="mt-5"> <!--New Releases-->
+        <div class="container-fluid ">
+          <p class="text-light fs-4 ms-5">New Releases</p>
+          <div class="row gx- justify-content-center ">
+
+            <div class="anim col col-2 ">
+              <img src="./assets/media/media13.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media14.webp" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2 ">
+              <img src="./assets/media/media15.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media16.webp" alt="" width="210rem">
+            </div>
+            <div class="col col-2 ">
+              <img src="./assets/media/media17.jpg" alt="" width="210rem">
+            </div>
+
+            <div class="col col-2">
+              <img src="./assets/media/media18.jpg" alt="" width="210rem">
+            </div>
+      </section>
+      </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="container mt-5">
+        <div id="social" class="d-flex mb-4  fs-2 ">
+          <i class="fa-brands fa-facebook "></i>
+          <i class="fa-brands fa-instagram ms-2"></i>
+          <i class="fa-brands fa-twitter ms-2"></i>
+          <i class="fa-brands fa-youtube ms-2"></i>
+        </div>
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="row">
+              <div class="col-md-3 text-light">
+                <ul class="list-unstyled">
+                  <li>Audio and Subtitle</li>
+                  <li>Media Center</li>
+                  <li>Privacy</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-light">
+                <ul class="list-unstyled">
+                  <li>Audio description</li>
+                  <li>Investor Relation</li>
+                  <li>Legal Notices</li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-light">
+                <ul class="list-unstyled">
+                  <li>Help Center</li>
+                  <li>Jobs</li>
+                  <li>Cookie Preferences</li>
+
+                </ul>
+              </div>
+              <div class="col-md-3 text-light">
+                <ul class="list-unstyled">
+                  <li>Gift card</li>
+                  <li>Terms of use</li>
+                  <li>Corporate In</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <a id="code" href="#"><button type="button"
+                  class="btn btn-outline-secondary btn-sm border border-secondary rounded-0 mb-2">Service
+                  Code</button></a>
+      </div>
+        <div class="row">
+          <div class="col-10 mx-auto text-light">
+            <div class="row">
+
+              <div class="col">
+                <p class="copy-right">@ 1997 - 2023 Netflix , Inc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
